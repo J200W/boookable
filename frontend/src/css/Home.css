@@ -22,7 +22,7 @@
 .header-left > h1 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900;
-    font-size: 90px;
+    font-size: 6vw;
     margin-top: 0;
     margin-bottom: 0;
     color: #FFF;
@@ -31,7 +31,7 @@
 .header-left > h2 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 3vw;
     color: #000;
     background-color: #5FFA38;
     width: fit-content;
@@ -40,10 +40,30 @@
 .header-left > h3 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 2.5vw;
     margin-top: 0;
     color: #AAA;
+    width: 100%;
+}
+
+.header-left > p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #FFF;
     width: 50%;
+}
+
+.header-left > p > span {
+    font-weight: 600;
+    background-color: #5FFA38;
+    color: #000;
+}
+
+#header-left-bold {
+    font-weight: 900;
 }
 
 

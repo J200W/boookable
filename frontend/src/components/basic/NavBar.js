@@ -1,7 +1,7 @@
 import React from "react";
 import "src/css/NavBar.css";
 import logo from "src/assets/logo.png";
-import category from "src/data/category";
+import category from "src/data/category_fr";
 
 function NavBar() {
     return (
@@ -9,7 +9,13 @@ function NavBar() {
             <div className="nav-bar-background">
                 <nav className="nav-bar-content">
                     <div className="nav-bar-up">
-                        <img src={logo} alt="logo" className="nav-bar-logo" />
+                        <a href="/">
+                            <img
+                                src={logo}
+                                alt="logo"
+                                className="nav-bar-logo"
+                            />
+                        </a>
                         <div className="nav-bar-search">
                             <input
                                 className="nav-bar-search-input"
@@ -35,13 +41,13 @@ function NavBar() {
                         <div className="nav-bar-links">
                             <a
                                 href="//devis-location-de-materiel-audiovisuel"
-                                className="nav-bar-link full-light-blue"
+                                className="nav-bar-link empty-light-blue"
                             >
                                 Devis
                             </a>
                             <a
                                 href="//devis-location-de-materiel-audiovisuel"
-                                className="nav-bar-link empty-light-blue"
+                                className="nav-bar-link full-light-blue"
                             >
                                 Contacts
                             </a>
@@ -70,7 +76,7 @@ function NavBar() {
                                                             <ul className="mega-links">
                                                                 {mega_box.links.map(
                                                                     (link) => (
-                                                                        <li >
+                                                                        <li>
                                                                             <a
                                                                                 className="mega-link"
                                                                                 href={
