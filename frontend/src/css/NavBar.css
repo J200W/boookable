@@ -72,9 +72,8 @@
 }
 
 .nav-bar-search-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
+    width: 45px;
+    height: 45px;
     border: 1px solid;
     background-color: hsl(210, 17%, 98%);
     color: #000000;
