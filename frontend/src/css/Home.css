@@ -1,0 +1,68 @@
+.header {
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.header-left, .header-right {
+    flex: 1;
+    width: 50%;
+}
+
+/*  HEADER LEFT  */
+
+.header-left {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.header-left > h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #FFF;
+}
+
+.header-left > h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: #000;
+    background-color: #5FFA38;
+    width: fit-content;
+}
+
+.header-left > h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 0;
+    color: #AAA;
+    width: 50%;
+}
+
+
+/*  HEADER RIGHT  */
+.header-right {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: right;
+}
+
+.header-right > img {
+    width: auto;
+    height: 100%;
+    max-height: 650px;
+    /* put it on the right */
+    float: right;
+    /* make it stay on the right */
+    display: block;
+    object-fit: contain;
+}
