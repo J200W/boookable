@@ -1,14 +1,43 @@
 import React from "react";
 import Carousel from "src/components/home/Carousel";
+import CarouselF from "src/components/home/CarouselF";
 import "src/css/Presentation.scoped.css";
+import photo_1 from "src/assets/carousel/photo-1.png";
+import photo_2 from "src/assets/carousel/photo-2.png";
+import photo_3 from "src/assets/carousel/photo-3.png";
+import photo_4 from "src/assets/carousel/photo-4.png";
+import photo_5 from "src/assets/carousel/photo-5.png";
+import photo_1_f from "src/assets/carousel-f/photo-1-f.png";
+import photo_2_f from "src/assets/carousel-f/photo-2-f.png";
+import photo_3_f from "src/assets/carousel-f/photo-3-f.png";
+import photo_4_f from "src/assets/carousel-f/photo-4-f.png";
+import photo_5_f from "src/assets/carousel-f/photo-5-f.png";
 
 function Presentation() {
+    const photo = [
+        photo_1,
+        photo_2,
+        photo_3,
+        photo_4,
+        photo_5,
+    ];
+
+    const photo_f = [
+        photo_1_f,
+        photo_2_f,
+        photo_3_f,
+        photo_4_f,
+        photo_5_f,
+    ];
+
     return (
         <div className="header">
             <div className="header-left">
                 <div className="header-left-first-line">
                     <h1>Louez du matériel</h1>
-                    <h2>Vidéo | Photo | Audio</h2>
+                    <div className="highlighted">
+                        <h2>Vidéo | Photo | Audio</h2>
+                    </div>
                 </div>
                 <div className="header-left-second-line">
                     <h3>en quelques clics.</h3>
@@ -56,7 +85,12 @@ function Presentation() {
                 </div>
             </div>
             <div className="header-right">
-                <Carousel />
+                <div className="carousel-f">
+                    <Carousel photos={photo} />
+                </div>
+                <div className="carousel-n">
+                    <CarouselF photos={photo_f} />
+                </div>
             </div>
         </div>
     );

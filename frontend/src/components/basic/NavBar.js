@@ -2,19 +2,35 @@ import React from "react";
 import "src/css/NavBar.scoped.css";
 import logo from "src/assets/logo.png";
 import category from "src/data/category_fr";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 function NavBar() {
     const handleClickNav = () => {
         const nav = document.getElementsByClassName("nav-bar-down-list")[0];
-        const display = nav.computedStyleMap().get("display").toString()
+        const button = document.getElementsByClassName("fa")[0];
+        const display = nav
+            .computedStyleMap()
+            .get("display")
+            .toString();
         if (display === "none") {
-            console.log("display is now: flex")
-            nav.setAttribute("style", "display: flex;")
+            nav.setAttribute("style", "display: flex;");
+            button.className = "fa fa-times";
         } else {
-            console.log("display is now: none");
-            nav.setAttribute("style", "display: none;")
+            nav.setAttribute("style", "display: none;");
+            button.className = "fa fa-bars";
         }
-    }
+    };
+
+    // check when the window is resized
+    window.addEventListener("resize", () => {
+        const nav = document.getElementsByClassName("nav-bar-down-list")[0];
+        const button = document.getElementsByClassName("fa")[0];
+        if (window.innerWidth > 1038) {
+            nav.setAttribute("style", "display: flex;");
+            button.className = "fa fa-times";
+        }
+    });
+
     return (
         <div className="nav-bar">
             <div className="nav-bar-background">
@@ -49,7 +65,7 @@ function NavBar() {
                         </div>
                         <div className="nav-bar-links">
                             <a
-                                href="//devis-location-de-materiel-audiovisuel"
+                                href="https://www.boookable.com/devis-location-de-materiel-audiovisuel"
                                 className="nav-bar-link empty-light-blue"
                             >
                                 Devis
@@ -61,15 +77,21 @@ function NavBar() {
                                 Contacts
                             </a>
                         </div>
-                        <button onClick={handleClickNav}>
-                            <i className="fa fa-bars" />
+                        <button
+                            className="hamburger-btn"
+                            onClick={handleClickNav}
+                        >
+                            <i className="fa fa-bars" aria-hidden="true" />
                         </button>
                     </div>
                     <div className="nav-bar-down">
                         <ul className="nav-bar-down-list">
                             {category.map((cat, index) => (
-                                <li className="nav-bar-down-list-item" key={index}>
-                                    <a href="/" className="nav-bar-dropbtn">
+                                <li
+                                    className="nav-bar-down-list-item"
+                                    key={index}
+                                >
+                                    <a href="/" className="">
                                         {cat.section}
                                     </a>
                                     <div className="mega-background">
@@ -77,7 +99,10 @@ function NavBar() {
                                             <div className="mega-content">
                                                 {cat.mega_box.map(
                                                     (mega_box, index) => (
-                                                        <div className="mega-row" key={index}>
+                                                        <div
+                                                            className="mega-row"
+                                                            key={index}
+                                                        >
                                                             <div className="mega-category">
                                                                 <a href="/">
                                                                     {
@@ -87,8 +112,15 @@ function NavBar() {
                                                             </div>
                                                             <ul className="mega-links">
                                                                 {mega_box.links.map(
-                                                                    (link, index) => (
-                                                                        <li key={index}>
+                                                                    (
+                                                                        link,
+                                                                        index
+                                                                    ) => (
+                                                                        <li
+                                                                            key={
+                                                                                index
+                                                                            }
+                                                                        >
                                                                             <a
                                                                                 className="mega-link"
                                                                                 href={
@@ -111,6 +143,16 @@ function NavBar() {
                                     </div>
                                 </li>
                             ))}
+                            <div className="nav-bar-down-list-item nav-extra">
+                                <a href="/">
+                                    Devis
+                                </a>
+                            </div>
+                            <div className="nav-bar-down-list-item nav-extra">
+                                <a href="/">
+                                    Contacts
+                                </a>
+                            </div>
                         </ul>
                     </div>
                 </nav>

@@ -5,7 +5,6 @@
     width: 90%;
     margin: 0 auto;
     margin-top: 10px;
-    padding: 25px;
 }
 
 .header-left, .header-right {
@@ -36,13 +35,21 @@
     color: #FFF;
 }
 
-.header-left-first-line > h2 {
+.header-left-first-line > .highlighted {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.header-left-first-line > .highlighted > h2 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900;
-    font-size: 3vw;
+    font-size: 3vw; 
     color: #000;
     background-color: #FFF;
-    width: fit-content;
+
 }
 
 .header-left-second-line > h3 {
@@ -57,7 +64,7 @@
 .header-left-third-line > p {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
-    font-size: 1vw;
+    font-size: 1.2vw;
     margin-top: 5px;
     margin-bottom: 0;
     color: #FFF;
@@ -125,18 +132,24 @@
     /* make it stay on the right */
 }
 
+.carousel-n {
+    display: none;
+}
+
+.carousel-f {
+    display: block;
+}
 
 /*  BREAKPOINTS  */
 
 /* MOBILE */
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .header {
-        flex-direction: column;
-        width: 100%;
+        flex-direction: column-reverse;
+        width: 95%;
         margin: 0 auto;
-        margin-top: 10px;
-        padding: 25px;
+        margin-top: 30px;
     }
 
     .header-left, .header-right {
@@ -153,7 +166,7 @@
         font-size: 8vw;
     }
 
-    .header-left-first-line > h2 {
+    .header-left-first-line > .highlighted > h2 {
         font-size: 5vw;
     }
 
@@ -175,5 +188,47 @@
     .button-presentation {
         font-size: 1.5vw;
         padding: 2vw 3vw;
+    }
+
+    .carousel-n {
+        display: block;
+    }
+
+    .carousel-f {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    .header-left-first-line > h1 {
+        font-size: 12vw;
+    }
+
+    .header-left-first-line >  .highlighted > h2 {
+        font-size: 6vw;
+    }
+
+    .header-left-second-line > h3 {
+        font-size: 5vw;
+    }
+
+    .header-left-third-line > p {
+        font-size: 3vw;
+    }
+
+    .header-left-buttons {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .button-presentation {
+        font-size: 2.5vw;
+        padding: 1vw 2vw;
+        margin-bottom: 10px;
     }
 }

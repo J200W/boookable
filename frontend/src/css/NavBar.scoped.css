@@ -39,6 +39,9 @@
 .nav-bar-logo {
     width: auto;
     max-height: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 /* SEARCH BAR */
@@ -124,23 +127,30 @@
 
 /*  NAVBAR WITH FONT AWESOME  */
 
-.fa-bars {
-    color: #FFF;
-    border: 1px solid #FFF;
-    padding: 0.7rem;
-    display: none;
+.fa {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 }
 
-.fa-bars:hover {
-    color: #5FFA38;
-    border: 1px solid #5FFA38;
+.fa:hover {
     transition: all 0.1s ease-in-out;
 }
 
-button {
+.hamburger-btn {
+    display: none;
+    color: #FFF;
     background-color: transparent;
+    font-size: 5vmin;
     border: none;
 }
+
+.hamburger-btn:hover {
+    color: #5FFA38;
+    transition: all 0.1s ease-in-out;
+}
+
 
 /*  PARTIE BASSE DE LA NAVBAR  */
 
@@ -153,6 +163,8 @@ button {
     border-top: 2px solid #FFF;
     border-bottom: 2px solid #FFF;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .nav-bar-down-list {
@@ -164,6 +176,7 @@ button {
     margin: 0;
     list-style: none;
     padding: 0;
+    transition: all 0.9s ease-in-out;
 }
 
 .nav-bar-down-list-item {
@@ -173,18 +186,23 @@ button {
 }
 
 .nav-bar-down-list-item>a {
+    text-align: center;
     display: block;
     text-decoration: none;
     color: #FFF;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 600;
-    font-size: 1.7vmin;
+    font-size: 1vw;
     transition: all 0.1s ease-in-out;
 }
 
 .nav-bar-down-list-item>a:hover {
     color: #5FFA38;
     transition: all 0.1s ease-in-out;
+}
+
+.nav-extra {
+    display: none;
 }
 
 /*  PARTIE HAUTE DES MEGAS DROPDOWN  */
@@ -202,7 +220,7 @@ button {
 
 .mega-box {
     position: absolute;
-    top: 100px;
+    top: 103px;
     background-color: #555;
     width: 100%;
     display: block;
@@ -211,7 +229,7 @@ button {
     flex-direction: row;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav-bar-down-list-item:hover .mega-box {
@@ -290,14 +308,18 @@ button {
     transition: all 0.1s ease-in-out;
 }
 
-@media screen and (max-width: 1038px) {
+@media screen and (max-width: 1140px) {
     .empty-space {
-        height: 40px;
+        height: 80px;
         background-color: #000;
         clear: both;
     }
 
-    .fa-bars {
+    .hamburger-btn {
+        display: block;
+    }
+
+    .nav-extra {
         display: block;
     }
 
@@ -313,7 +335,7 @@ button {
 
     .nav-bar-search-input {
         width: 60%;
-        height: 35px;
+        height: 40px;
     }
 
     .nav-bar-search-button {
@@ -322,14 +344,12 @@ button {
     }
 
     .nav-bar-down {
-        display: none;
         border-bottom: none;
     }
 
     .nav-bar-down-list {
-        display: flex;
+        display: none;
         flex-direction: column;
-        justify-content: top;
         align-items: center;
         width: 25%;
         min-width: 200px;
@@ -356,12 +376,13 @@ button {
 
     .nav-bar-down-list-item>a {
         font-size: 13px;
+        text-align: left;
     }
 
     .mega-box {
         position: absolute;
         left: 25%;
-        top: 58px;
+        top: 65px;
         min-height: 50vh;
     }
 
@@ -382,6 +403,9 @@ button {
 }
 
 @media screen and (max-width: 880px) {
+    .nav-bar-content {
+        width: 95%;
+    }
     .mega-box {
         left : 200px;
     }
@@ -393,8 +417,15 @@ button {
 }
 
 @media screen and (max-width: 660px) {
+    .empty-space {
+        height: 50px;
+    }
+
     .mega-content .mega-row {
         width: 30%;
     }
 
+        .nav-bar-search-input {
+        font-size: 3vmin;
+    }
 }

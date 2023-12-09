@@ -1,10 +1,10 @@
 // import { useState } from "react";
 import "src/css/Carousel.scoped.css";
 
-function Carousel({ photos }) {
+function CarouselF({ photos }) {
     return (
         <div
-            id="carouselExampleIndicators"
+            id="carouselExampleIndicatorsF"
             className="carousel slide"
             data-ride="carousel"
         >
@@ -13,7 +13,7 @@ function Carousel({ photos }) {
                     return (
                         <li
                             key={index}
-                            data-target="#carouselExampleIndicators"
+                            data-target="#carouselExampleIndicatorsF"
                             data-slide-to={index}
                             className={index === 0 ? "active" : ""}
                         />
@@ -41,7 +41,7 @@ function Carousel({ photos }) {
             </div>
             <a
                 className="carousel-control-prev"
-                href="#carouselExampleIndicators"
+                href="#carouselExampleIndicatorsF"
                 role="button"
                 data-slide="prev"
             >
@@ -53,7 +53,7 @@ function Carousel({ photos }) {
             </a>
             <a
                 className="carousel-control-next"
-                href="#carouselExampleIndicators"
+                href="#carouselExampleIndicatorsF"
                 role="button"
                 data-slide="next"
             >
@@ -67,4 +67,4 @@ function Carousel({ photos }) {
     );
 }
 
-export default Carousel;
+export default CarouselF;
