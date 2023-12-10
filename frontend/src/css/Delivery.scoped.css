@@ -1,4 +1,4 @@
 .delivery-background {
-    height: 90vh;
+    min-height: 90vh;
     background: linear-gradient(180deg, rgba(81, 90, 206, 1) 0%, rgba(156, 71, 201, 1) 25%, rgba(201, 117, 144, 1) 50%, rgba(237, 155, 98, 1) 75%, rgba(237, 155, 98, 1) 100%);
 }
