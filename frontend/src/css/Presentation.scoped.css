@@ -48,7 +48,7 @@
     font-weight: 900;
     font-size: 3vw; 
     color: #000;
-    background-color: #FFF;
+    background-color: #F8D210;
 
 }
 
@@ -94,7 +94,7 @@
     font-weight: 900;
     font-size: 0.9vw;
     padding: 0.5vw 1vw;
-    background-color: #F8D210;
+    background-color: #EEF275;
     border: 3px solid #000;
     color: #000;
     transition: all 0.2s ease-in-out;
@@ -146,7 +146,7 @@
 
 @media screen and (max-width: 768px) {
     .header {
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 95%;
         margin: 0 auto;
         margin-top: 30px;
@@ -202,11 +202,11 @@
 @media screen and (max-width: 660px) {
 
     .header-left-first-line > h1 {
-        font-size: 12vw;
+        font-size: 14vw;
     }
 
     .header-left-first-line >  .highlighted > h2 {
-        font-size: 6vw;
+        font-size: 7vw;
     }
 
     .header-left-second-line > h3 {
@@ -214,7 +214,7 @@
     }
 
     .header-left-third-line > p {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .header-left-buttons {
@@ -227,7 +227,7 @@
     }
 
     .button-presentation {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         padding: 1vw 2vw;
         margin-bottom: 10px;
     }

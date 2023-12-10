@@ -1,0 +1,111 @@
+.reviews-background {
+    width: 100%;
+    margin: auto;
+}
+
+.reviews-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.reviews-container>h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #000;
+    background-color: #FFF;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reviews-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 0 50px 0;
+    overflow: scroll;
+    margin: auto;
+    gap: 20px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#1a1a1a, #000);
+    border-radius: 30px;
+    padding: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    max-height: 200px;
+    min-width: 250px;
+    transition: all 0.2s ease-out;
+}
+
+.review:hover {
+    background: #1a1a1a;
+}
+
+.review-up {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+
+.review-up>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.reviews-up-text>h2,
+.reviews-up-text>p {
+    color: #FFF;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.reviews-up-text>h2 {
+    font-size: 1rem;
+}
+
+.reviews-up-text>p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.review-down {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    width: 100%;
+    font-weight: 300;
+    color: #FFF;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.review-down-text {
+    font-size: 1rem;
+    margin: 0;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.read-more {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    align-self: flex-start;
+    margin: 0;
+}

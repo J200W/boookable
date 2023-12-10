@@ -12,6 +12,7 @@ import optiques from "src/assets/categories/optiques.jpeg";
 function Categories() {
     return (
         <div className="categories-background">
+            <h1>NOTRE (super) CATALOGUE</h1>
             <div className="categories-content">
                 <a href="/" className="categories-item">
                     <img src={cameras} alt="Caméras" />
