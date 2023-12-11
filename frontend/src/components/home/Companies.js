@@ -1,5 +1,5 @@
 import React from "react";
-import "src/css/Companies.scoped.css";
+import "src/css/home/Companies.scoped.css";
 import boookable_logo from "src/assets/logo.png";
 import superdry from "src/assets/companies/superdry.png";
 import accor from "src/assets/companies/accor.png";

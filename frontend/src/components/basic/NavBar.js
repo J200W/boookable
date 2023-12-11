@@ -21,16 +21,6 @@ function NavBar() {
         }
     };
 
-    // check when the window is resized
-    window.addEventListener("resize", () => {
-        const nav = document.getElementsByClassName("nav-bar-down-list")[0];
-        const button = document.getElementsByClassName("fa")[0];
-        if (window.innerWidth > 1038) {
-            nav.setAttribute("style", "display: flex;");
-            button.className = "fa fa-times";
-        }
-    });
-
     return (
         <div className="nav-bar">
             <div className="nav-bar-background">

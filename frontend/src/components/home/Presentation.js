@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "src/components/home/Carousel";
 import CarouselF from "src/components/home/CarouselF";
-import "src/css/Presentation.scoped.css";
+import "src/css/home/Presentation.scoped.css";
 import photo_1 from "src/assets/carousel/photo-1.png";
 import photo_2 from "src/assets/carousel/photo-2.png";
 import photo_3 from "src/assets/carousel/photo-3.png";

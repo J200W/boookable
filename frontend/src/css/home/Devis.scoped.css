@@ -1,0 +1,237 @@
+.devis-background {
+    min-height: 90vh;
+    background: linear-gradient(0deg, rgba(81, 90, 206, 1) 0%, rgba(156, 71, 201, 1) 25%, rgba(201, 117, 144, 1) 50%, rgba(237, 155, 98, 1) 75%, rgba(237, 155, 98, 1) 100%);
+    width: 100%;
+}
+
+.devis-content {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.devis-content > h1 {
+    color: #FFF;
+    width: fit-content;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.devis-forms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: top;
+    align-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.devis-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.devis-form:nth-child(2) {
+    border-left: 2px solid #FFF;
+    padding-left: 20px;
+}
+
+.devis-form:nth-child(1) {
+    padding-right: 20px;
+}
+
+.devis-form > h1 {
+    margin: 0;
+    color: #FFF;
+    width: fit-content;
+    font-size: 1.7rem;
+    font-weight: 900;
+    background-color: #753A88;
+    padding: 5px 10px;
+    width: 90%;
+    text-align: center;
+}
+
+.devis-form > h3 {
+    color: #FFF;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    text-align: center;
+    width: 90%;
+}
+
+.devis-form-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.devis-input-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    align-content: center;
+    width: 48%;
+}
+
+.devis-input-label > label {
+    color: #FFF;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.devis-input-label > input, .devis-input-label > input[type=button] {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+}
+
+.devis-input-label > input:focus {
+    outline: none;
+}
+
+input[type=button] {
+    width: 100%;
+    margin-right: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=button]:hover {
+    background-color: #CCC;
+    border: 1px solid #CCC;
+}
+
+input[type=file] {
+    display: none;
+}
+
+.devis-form-precision {
+    width: 90%;
+    margin: auto;
+    min-height: 80px;
+    margin: 10px 0;
+    border: #FFF 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+.devis-form-precision:focus {
+    outline: none;
+}
+
+.devis-submit {
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #EDF25C;
+    border: 2px solid #000;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.devis-submit:hover {
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+    box-shadow: #FFF -7px 7px;
+}
+
+@media screen and (max-width: 1340px) {
+    .devis-form > h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .devis-content > h1 {
+        font-size: 2.5rem;
+    }
+
+    .devis-forms {
+        flex-direction: column;
+    }
+
+    .devis-form > h1 {
+        width: fit-content;
+    }
+
+    .devis-form:nth-child(2) {
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .devis-content > h1 {
+        font-size: 2rem;
+    }
+
+    .devis-form > h1 {
+        font-size: 1.1rem;
+    }
+
+    .devis-form > h3 {
+        font-size: 0.9rem;
+    }
+
+    .devis-form-line {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .devis-input-label {
+        width: 100%;
+    }
+
+    .devis-input-label > label {
+        text-align: left;
+    }
+
+    .devis-input-label > input {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .devis-form-precision {
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    .devis-submit {
+        font-size: 1rem;
+    }
+}

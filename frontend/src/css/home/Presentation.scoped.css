@@ -7,7 +7,8 @@
     margin-top: 10px;
 }
 
-.header-left, .header-right {
+.header-left,
+.header-right {
     flex: 1;
     width: 50%;
 }
@@ -26,7 +27,7 @@
     align-items: left;
 }
 
-.header-left-first-line > h1 {
+.header-left-first-line>h1 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900;
     font-size: 6vw;
@@ -35,24 +36,24 @@
     color: #FFF;
 }
 
-.header-left-first-line > .highlighted {
+.header-left-first-line>.highlighted {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
 }
 
-.header-left-first-line > .highlighted > h2 {
+.header-left-first-line>.highlighted>h2 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900;
-    font-size: 3vw; 
+    font-size: 3vw;
     color: #000;
     background-color: #F8D210;
-
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.header-left-second-line > h3 {
+.header-left-second-line>h3 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900;
     font-size: 2.5vw;
@@ -61,7 +62,7 @@
     width: 100%;
 }
 
-.header-left-third-line > p {
+.header-left-third-line>p {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
     font-size: 1.2vw;
@@ -71,7 +72,7 @@
     width: 50%;
 }
 
-.header-left-third-line > p > span {
+.header-left-third-line>p>span {
     font-weight: 600;
     background-color: #5FFA38;
     color: #000;
@@ -84,6 +85,7 @@
 .header-left-buttons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
@@ -92,7 +94,7 @@
 .button-presentation {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 0.5vw 1vw;
     background-color: #EEF275;
     border: 3px solid #000;
@@ -110,9 +112,9 @@
     box-shadow: #FFF -7px 7px;
 }
 
-.button-presentation > p {
+.button-presentation>p {
     text-align: center;
-    margin-right: 1vw;
+    margin-right: 5px;
 }
 
 /*  HEADER RIGHT  */
@@ -124,7 +126,7 @@
     align-items: center;
 }
 
-.header-right > div {
+.header-right>div {
     width: auto;
     height: 100%;
     /* put it on the right */
@@ -145,7 +147,7 @@
 /* MOBILE */
 
 @media screen and (max-width: 1140px) {
-    .header-left-buttons{
+    .header-left-buttons {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -160,7 +162,8 @@
         margin-top: 30px;
     }
 
-    .header-left, .header-right {
+    .header-left,
+    .header-right {
         width: 100%;
     }
 
@@ -169,20 +172,20 @@
         padding-bottom: 10px;
     }
 
-    .header-left-first-line > h1 {
+    .header-left-first-line>h1 {
         text-align: left;
         font-size: 8vw;
     }
 
-    .header-left-first-line > .highlighted > h2 {
+    .header-left-first-line>.highlighted>h2 {
         font-size: 5vw;
     }
 
-    .header-left-second-line > h3 {
+    .header-left-second-line>h3 {
         font-size: 4vw;
     }
 
-    .header-left-third-line > p {
+    .header-left-third-line>p {
         font-size: 2vw;
         width: 100%;
     }
@@ -209,19 +212,19 @@
 
 @media screen and (max-width: 660px) {
 
-    .header-left-first-line > h1 {
+    .header-left-first-line>h1 {
         font-size: 14vw;
     }
 
-    .header-left-first-line >  .highlighted > h2 {
+    .header-left-first-line>.highlighted>h2 {
         font-size: 7vw;
     }
 
-    .header-left-second-line > h3 {
+    .header-left-second-line>h3 {
         font-size: 5vw;
     }
 
-    .header-left-third-line > p {
+    .header-left-third-line>p {
         font-size: 4vw;
     }
 

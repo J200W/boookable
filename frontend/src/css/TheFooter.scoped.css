@@ -1,0 +1,90 @@
+.footer-background {
+    background-color: #FFF;
+    padding: 45px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.footer-background > a > img {
+    padding-left: 5%;
+    max-width: 200px
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.footer-content-left > p, .footer-content-left > a, .footer-content-left > div, .footer-content-center > a, .footer-content-right > a {
+    font-size: 1rem;
+    color: #000;
+    margin: 5px 0;
+}
+
+.footer-content-left > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.footer-content-left > div > a > i{
+    color: #000;
+}
+
+.footer-content-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.footer-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+}
+
+@media screen and (max-width: 880px) {
+    .footer-background > a > img {
+        padding-left: 5%;
+        max-width: 150px
+    }
+
+    .footer-content-left > p, .footer-content-left > a, .footer-content-left > div, .footer-content-center > a, .footer-content-right > a {
+        font-size: 0.8rem;
+        color: #000;
+        margin: 5px 0;
+    }
+
+    .footer-background {
+        background-color: #FFF;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .footer-content-left > p, .footer-content-left > a, .footer-content-left > div, .footer-content-center > a, .footer-content-right > a {
+        font-size: 0.6rem;
+        color: #000;
+    }
+}

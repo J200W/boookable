@@ -1,5 +1,5 @@
 import React from "react";
-import "src/css/Categories.scoped.css";
+import "src/css/home/Categories.scoped.css";
 import acc_cameras from "src/assets/categories/acc-cameras.jpeg";
 import cameras from "src/assets/categories/cameras.jpeg";
 import acc_lumieres from "src/assets/categories/acc-lumieres.jpeg";

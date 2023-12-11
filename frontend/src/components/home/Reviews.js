@@ -1,5 +1,5 @@
 import React from "react";
-import "src/css/Reviews.scoped.css";
+import "src/css/home/Reviews.scoped.css";
 import logo from "src/assets/logo-square.png";
 
 function Reviews() {

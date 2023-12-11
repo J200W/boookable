@@ -18,8 +18,20 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
+.button-basic-no {
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    padding: 0.8vmin 2vmin;
+    transition: all 0.2s ease-in-out;
+}
+
 .button-basic:hover {
     box-shadow: #FFF -3px 3px 0px 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-basic-no:hover {
     transition: all 0.2s ease-in-out;
 }
 

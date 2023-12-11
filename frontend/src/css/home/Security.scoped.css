@@ -1,0 +1,140 @@
+.security-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    min-height: 70vh;
+    width: 100%;
+}
+
+.security-content {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.security-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex: 1;
+}
+
+.security-left>h1 {
+    color: #FFF;
+    width: fit-content;
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.security-left>h1>span {
+    background-color: #5FFA38;
+    color: #000;
+}
+
+.security-left>h2 {
+    color: #777;
+    font-weight: 900;
+}
+
+.security-left>ul {
+    color: #FFF;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.security-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.security-right-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    flex: 1;
+}
+
+.security-right-box>img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    max-height: 130px;
+}
+
+.security-right-box>p {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1140px) {
+
+    .security-left>h1 {
+        font-size: 2.5rem;
+    }
+
+    .security-left>h2 {
+        font-size: 1.5rem;
+    }
+
+    .security-left>ul {
+        font-size: 0.8rem;
+    }
+
+    .security-right-box>img {
+        max-height: 100px;
+    }
+
+    .security-right-box>p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .security-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .security-left {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .security-left>h1 {
+        font-size: 2rem;
+    }
+
+    .security-left>h2 {
+        font-size: 1.5rem;
+    }
+
+    .security-left>ul {
+        font-size: 0.8rem;
+        padding-left: 5%;
+    }
+
+    .security-right-box {
+        margin-bottom: 20px;
+    }
+
+    .security-right-box>p {
+        font-size: 0.8rem;
+    }
+}

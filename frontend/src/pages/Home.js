@@ -4,6 +4,10 @@ import Categories from "src/components/home/Categories";
 import Companies from "src/components/home/Companies";
 import Reviews from "src/components/home/Reviews";
 import Delivery from "src/components/home/Delivery";
+import Security from "src/components/home/Security";
+import Devis from "src/components/home/Devis";
+import Kits from "src/components/home/Kits";
+import TheFooter from "src/components/basic/TheFooter";
 
 function Home() {
     return (
@@ -14,6 +18,10 @@ function Home() {
             <Companies />
             <Reviews />
             <Delivery />
+            <Security />
+            <Devis />
+            <Kits />
+            <TheFooter />
         </div>
     );
 }

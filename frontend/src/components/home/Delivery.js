@@ -1,5 +1,5 @@
 import React from "react";
-import "src/css/Delivery.scoped.css";
+import "src/css/home/Delivery.scoped.css";
 import delivery from "src/assets/delivery.png";
 function Delivery() {
     return (
@@ -57,7 +57,7 @@ function Delivery() {
                             </a>
                         </div>
                     </div>
-                    <p>
+                    <p id="PS">
                         *Paris et proche banlieue (première couronne) :
                         Livraison & Récupération 100% gratuite. Partout en
                         France ; Livraison & Récupération sur devis (à prix
