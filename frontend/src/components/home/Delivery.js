@@ -46,7 +46,7 @@ function Delivery() {
                                 role="button"
                                 aria-pressed="true"
                             >
-                                <p>J'AI UNE LISTE DE MATÉRIEL.</p>
+                                <p>JE NE SAIS PAS CE QU'IL ME FAUT.</p>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"

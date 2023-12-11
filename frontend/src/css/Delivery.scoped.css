@@ -1,4 +1,141 @@
 .delivery-background {
     min-height: 90vh;
     background: linear-gradient(180deg, rgba(81, 90, 206, 1) 0%, rgba(156, 71, 201, 1) 25%, rgba(201, 117, 144, 1) 50%, rgba(237, 155, 98, 1) 75%, rgba(237, 155, 98, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.delivery-content {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.delivery-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex: 1;
+}
+
+.delivery-left>p {
+    color: #FFF;
+}
+
+.delivery-left-up,
+.delivery-left-mid {
+    text-align: left;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+.delivery-left-up>h1,
+.delivery-left-mid>h1 {
+    margin: 0;
+    color: #FFF;
+    width: fit-content;
+}
+
+.delivery-left-up>h1 {
+    background-color: #000;
+}
+
+.delivery-left-down {
+    color: #FFF;
+}
+
+.button-delivery-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.button-delivery {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+    font-size: 0.7rem;
+    padding: 0.5vw 1vw;
+    background-color: #EEF275;
+    border: 3px solid #000;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: "100%";
+}
+
+.button-delivery:hover {
+    border: 3px solid #000;
+    box-shadow: #FFF -7px 7px;
+}
+
+.button-delivery>p {
+    text-align: center;
+    margin-right: 1vw;
+}
+
+.delivery-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.delivery-right>img {
+    width: 80%;
+}
+
+@media screen and (max-width: 1140px) {
+
+    .delivery-left-up,
+    .delivery-left-mid {
+        font-size: 1.2rem;
+    }
+
+    .button-delivery-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-delivery {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .delivery-content {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .delivery-left-up,
+    .delivery-left-mid {
+        text-align: left;
+        font-weight: 900;
+        font-size: 0.9rem;
+    }
+
+    .button-delivery {
+        font-size: 0.7rem;
+        padding: 2vw 3vw;
+    }
+
+    .delivery-content {
+        width: 95%;
+    }
 }

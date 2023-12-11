@@ -69,7 +69,7 @@
     border: 1px solid transparent;
     background-color: #f8f9fa;
     color: #181818;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-left: 10px;
 }
 
@@ -413,6 +413,7 @@
 
     .nav-bar-search-input {
         width: 70%;
+        font-size: 0.9rem;
     }
 
     .mega-box {
@@ -445,6 +446,6 @@
     }
 
     .nav-bar-search-input {
-        font-size: 4vmin;
+        height: 31px;
     }
 }

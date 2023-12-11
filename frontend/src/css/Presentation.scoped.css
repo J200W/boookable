@@ -84,7 +84,7 @@
 .header-left-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin-top: 10px;
 }
@@ -92,7 +92,7 @@
 .button-presentation {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900;
-    font-size: 0.9vw;
+    font-size: 0.7rem;
     padding: 0.5vw 1vw;
     background-color: #EEF275;
     border: 3px solid #000;
@@ -143,6 +143,14 @@
 /*  BREAKPOINTS  */
 
 /* MOBILE */
+
+@media screen and (max-width: 1140px) {
+    .header-left-buttons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .header {
@@ -227,7 +235,7 @@
     }
 
     .button-presentation {
-        font-size: 3.5vw;
+        font-size: 0.8rem;
         padding: 1vw 2vw;
         margin-bottom: 10px;
     }
