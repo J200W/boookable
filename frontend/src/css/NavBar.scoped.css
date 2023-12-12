@@ -88,6 +88,12 @@
     background-color: hsl(210, 17%, 98%);
     color: #000000;
     margin-left: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-bar-search-button:hover {
+    background-color: #DDD;
+    color: #000;
 }
 
 /* DEVIS ET APPELER */
