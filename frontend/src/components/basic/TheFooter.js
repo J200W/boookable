@@ -11,7 +11,7 @@ function TheFooter() {
             </a>
             <div className="footer-content">
                 <div className="footer-content-left">
-                    <p>8 rue Godillot, 93 400, Saint-Ouen, France.</p>
+                    <p>8 rue Godillot, 93400, Saint-Ouen, France.</p>
                     <p>33 1 87 66 24 84</p>
                     <a href="mailto:hello@boookable.com?subject=Hello%20Boookable%2C%20j'ai%20une%20question%20!">
                         ‍Hello@boookable.com

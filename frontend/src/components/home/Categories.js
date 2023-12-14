@@ -59,7 +59,7 @@ function Categories() {
                 <a href="/" className="categories-item">
                     <img src={optiques} alt="Optiques" />
                     <div className="categories-bottom">
-                        <p>Optiques</p>
+                        <p>Objectifs</p>
                     </div>
                 </a>
             </div>

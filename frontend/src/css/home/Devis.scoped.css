@@ -176,6 +176,7 @@ input[type=file] {
 }
 
 @media screen and (max-width: 880px) {
+
     .devis-content > h1 {
         font-size: 2.5rem;
     }
@@ -195,6 +196,10 @@ input[type=file] {
 }
 
 @media screen and (max-width: 660px) {
+    .devis-form-precision {
+        width: 91%;
+    }
+    
     .devis-content > h1 {
         font-size: 2rem;
     }

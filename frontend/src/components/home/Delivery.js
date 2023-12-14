@@ -32,7 +32,7 @@ function Delivery() {
                                 aria-pressed="true"
                             >
                                 <p>J'AI UNE LISTE DE MATÉRIEL.</p>
-                                <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                                <i className="fa fa-chevron-circle-right" aria-hidden="true"></i>
                             </a>
                             <a
                                 href="/"
@@ -41,7 +41,7 @@ function Delivery() {
                                 aria-pressed="true"
                             >
                                 <p>JE NE SAIS PAS CE QU'IL ME FAUT.</p>
-                                <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                                <i className="fa fa-chevron-circle-right" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>

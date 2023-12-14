@@ -7,7 +7,9 @@ import Delivery from "src/components/home/Delivery";
 import Security from "src/components/home/Security";
 import Devis from "src/components/home/Devis";
 import Kits from "src/components/home/Kits";
+import Reservation from "src/components/home/Reservation";
 import TheFooter from "src/components/basic/TheFooter";
+
 
 function Home() {
     return (
@@ -21,6 +23,7 @@ function Home() {
             <Security />
             <Devis />
             <Kits />
+            <Reservation />
             <TheFooter />
         </div>
     );

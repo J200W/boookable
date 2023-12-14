@@ -1,0 +1,186 @@
+.reservation-background {
+    min-height: 60vh;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.reservation-content {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.reservation-left,
+.reservation-right {
+    width: 50%;
+}
+
+.reservation-left {
+    text-align: left;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-left>h1 {
+    width: fit-content;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #000;
+    background-color: #FFF;
+    margin: auto;
+    margin-top: 0;
+}
+
+.reservation-left>h2 {
+    font-size: 1.3rem;
+    color: #AAA;
+    text-align: center;
+    font-weight: 500;
+}
+
+.reservation-left>div {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reservation-right {
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+}
+
+.reservation-right>img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    min-height: 558px;
+}
+
+/* CALENDAR COMPONENT */
+
+.rdrCalendarWrapper,
+.rdrDateRangeWrapper {
+    width: 70%;
+    min-width: 300px;
+    padding: 2px;
+    font-family: "Noto Sans", sans-serif;
+    border-radius: 10px;
+    border: 1px solid #FFF !important;
+    background-color: #FFF !important;
+    margin: auto;
+}
+
+.rdrDateDisplayWrapper {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #000 !important;
+}
+
+.rdrDateInput {
+    margin: auto;
+}
+
+.rdrDateInput>input {
+    color: #FFF !important;
+    font-size: 1rem !important;
+    font-weight: 900 !important;
+    font-family: "Noto Sans", sans-serif !important;
+    background-color: #000 !important;
+    border: none !important;
+}
+
+.rdrDateInput,
+.rdrDateDisplayItem,
+.rdrDateDisplayItemActive {
+    border: none !important;
+    background-color: none !important;
+}
+
+.rdrDayNumber>span {
+    color: #222 !important;
+    font-weight: 600;
+}
+
+.rdrDayDisabled {
+    background-color: #DDD !important;
+    color: #000 !important;
+}
+
+.rdrMonth {
+    width: 100% !important;
+    padding: 0 !important;
+    border-radius: 10px;
+}
+
+/* BUTTON */
+
+.button-reservation {
+    width: fit-content;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    margin: auto;
+    margin-top: 20px;
+    border: 3px solid #000;
+    background-color: #EEF275;
+    padding: 0.7rem 1rem;
+    color: #000;
+}
+
+.button-reservation:hover {
+    background-color: #000;
+    color: #FFF;
+    border: 3px solid #000;
+    box-shadow: #FFF -7px 7px;
+}
+
+@media screen and (max-width: 900px) {
+    .reservation-left>h1 {
+        font-size: 2.2rem;
+    }
+
+    .reservation-left>h2 {
+        font-size: 1rem;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reservation-left>h1 {
+        font-size: 2rem;
+    }
+
+    .reservation-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reservation-left,
+    .reservation-right {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+        align-content: center;
+        justify-self: center;
+    }
+
+    .rdrCalendarWrapper,
+    .rdrDateRangeWrapper {
+        width: 100%;
+        margin: auto;
+    }
+
+    .reservation-right>img {
+        min-height: 0;
+    }
+}
